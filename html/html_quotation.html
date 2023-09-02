@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/c.ico">
+    <title>Codeweb</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+
+
+        $(document).ready(function () {
+            $(".burger").click(function () {
+                $(".For-Main1-3, .For-Main1-4").slideToggle();
+            });
+
+            $(".btn1").click(function () {
+                $(".sidebar").toggle();
+            });
+
+
+        });
+
+    </script>
+    <style>
+        #active10 {
+            background-color: #0d8ba0;
+            color: white !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="For-Main1">
+
+        <div class=" For-Main1-1"><img src="images/code.jpg" alt="" width="50" height="50"></div>
+
+        <a class="For-Main1-2" href="../index.html">odeweb</a>
+        <a class="btn1">Menu</a>
+
+        <div class="For-Main1-3">
+
+            <ul>
+                <li> <a href=" #" class="color">HTML</a></li>
+                <li> <a href="../css/css.html" class="padd">CSS</a></li>
+                <li><a href="../php/php.html" class="padd">PHP</a></li>
+            </ul>
+        </div>
+        <div class=" For-Main1-4">
+            <a href="../signup.html" class="btn">SignUp</a>
+        </div>
+        <div class="burger" onclick="myBurger()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+
+
+    <div class="sidebar">
+        <h4 class="tutorial">HTML TUTORIAL</h4>
+        <div class="links">
+            <a href="html.html" id="active1">HTML Home</a>
+            <a href="html_intro.html" id="active2">HTML Introduction</a>
+            <a href="html_editors.html" id="active3">HTML Editors</a>
+            <a href="html_basic.html" id="active4">HTML Basic </a>
+            <a href="html_elements.html" id="active15">HTML Elements</a>
+            <a href="html_headings.html" id="active6">HTML Headings</a>
+            <a href="html_paragraphs.html" id="active7">HTML Paragraphs</a>
+            <a href="html_styles.html" id="active8">HTML Styles</a>
+            <a href="html_formatting.html" id="active9">HTML Formatting</a>
+            <a href="html_quotation.html" id="active10">HTML Quotation</a>
+            <a href="html_comments.html" id="active11">HTML Comments</a>
+            <a href="html_favicon.html" id="active12">HTML Favicon</a>
+            <a href="html_list.html" id="active13">HTML Lists</a>
+            <a href="html_block.html" id="active14">HTML Block and Inline</a>
+        </div>
+    </div>
+    <!-- intro heading -->
+
+    <h4 class="heading">HTML Quotation and Citation Elements
+
+    </h4>
+
+    <!-- Button -->
+    <div class="nextprev">
+        <a href="html_formatting.html" class="left ">
+            &lt; Previous</a>
+        <a href="html_comments.html" class="right  "> Next &gt;</a>
+    </div>
+    <!--line1-->
+    <div class="text padding gap2">
+        <p>In this chapter we will go through the
+            <span class="pink">&lt;blockquote&gt;</span>, <span class="pink">&lt;q&gt;</span>,
+            <span class="pink">&lt;abbr&gt;</span>,
+            <span class="pink">&lt;address&gt;</span>,
+            <span class="pink">&lt;cite&gt;</span>and
+            <span class="pink">&lt;bdo&gt;</span> HTML elements.
+    </div>
+
+    <!--line2-->
+    <div class="text ">
+        <h4 class="heading1">HTML &lt;blockquote&gt; for Quotations</h4>
+        <div class="padding">
+            <p>The HTML
+                <span class="pink">&lt;blockquote&gt;</span> element defines a section that is quoted from
+                another source.
+            </p>
+            <p>Browsers usually indent
+                <span class="pink">&lt;blockquote&gt;</span> elements.
+            </p>
+
+        </div>
+        <!-- code -->
+        <div class=" bg2">
+            <div class="grey ">
+                <h4 class="heading3">Example</h4>
+                <!--Output-->
+                <h4 class="heading2">OUTPUT</h4>
+                <div class="white">
+                    <p>Here is a quote from WWF's website:</p>
+                    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                        For 60 years, WWF has worked to help people and nature thrive. As the
+                        world's leading conservation organization, WWF works in nearly 100
+                        countries. At every level, we collaborate with people around the world to
+                        develop and deliver innovative solutions that protect communities, wildlife,
+                        and the places in which they live.
+                    </blockquote>
+                </div>
+                <!--html-->
+                <h4 class="heading2">HTML</h4>
+                <div class="white">
+                    <span class="b">&lt;<span class="br">p</span>&gt;</span>
+                    Here is a quote from WWF's website:
+                    <span class="b">&lt;<span class="br">/p</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">blockquote</span></span>
+                    <span class="r">cite</span><span
+                        class="b">="http://www.worldwildlife.org/who/index.html"&gt;</span><br>
+                    For 60 years, WWF has worked to help people and nature thrive. As the world's
+                    leading conservation organization, WWF works in nearly 100 countries. At every
+                    level, we collaborate with people around the world to develop and deliver
+                    innovative solutions that protect communities, wildlife, and the places in which
+                    they live.
+                    <br><span class="b">&lt;<span class="br">/blockquote</span>&gt;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--line3-->
+    <div class="text ">
+        <h4 class="heading1">HTML &lt;q&gt; for Short Quotations</h4>
+        <div class="padding">
+            <p>The HTML <span class="pink">&lt;q&gt;</span> tag
+                defines a short quotation.
+            </p>
+            <p>Browsers normally insert quotation marks around the
+                quotation.
+            </p>
+        </div>
+        <!-- code -->
+        <div class=" bg2">
+            <div class="grey ">
+                <h4 class="heading3">Example</h4>
+                <!--Output-->
+                <h4 class="heading2">OUTPUT</h4>
+                <div class="white">
+                    <p>WWF's goal is to: <q>Build a future where people live in harmony with
+                            nature.</q></p>
+                </div>
+                <!--html-->
+                <h4 class="heading2">HTML</h4>
+                <div class="white">
+                    <span class="b">&lt;<span class="br">p</span>&gt;</span>
+                    WWF's goal is to:
+                    <span class="b">&lt;<span class="br">q</span>&gt;</span>
+                    Build a future where people live in harmony with nature.
+                    <span class="b">&lt;<span class="br">/q</span>&gt;</span>
+                    <span class="b">&lt;<span class="br">/p</span>&gt;</span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--line4-->
+    <div class="text ">
+        <h4 class="heading1">HTML &lt;abbr&gt; for Abbreviations</h4>
+        <div class="padding">
+            <p>The HTML <span class="pink">&lt;abbr&gt;</span> tag
+                defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+            </p>
+            <p>Marking abbreviations can give useful information to
+                browsers, translation systems and search-engines.</p>
+            <p> <span class="note">Tip:</span> Use the
+                global title attribute to show the description for the abbreviation/acronym when you mouse over
+                the element.</p>
+        </div>
+        <!-- code -->
+        <div class=" bg2">
+            <div class="grey ">
+                <h4 class="heading3">Example</h4>
+                <!--Output-->
+                <h4 class="heading2">OUTPUT</h4>
+                <div class="white">
+                    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+                    </p>
+
+                </div>
+                <!--html-->
+                <h4 class="heading2">HTML</h4>
+                <div class="white">
+                    <span class="b">&lt;<span class="br">p</span>&gt;</span>
+                    The <span class="b">&lt;<span class="br">abbr</span></span><span class="r">
+                        title</span><span class="b">="World Health Organization"&gt;</span>WHO<span class="b">&lt;<span
+                            class="br">/abbr</span>&gt;</span> was founded in 1948.
+                    <span class="b">&lt;<span class="br">/p</span>&gt;</span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--line5-->
+    <div class="text ">
+        <h4 class="heading1">HTML &lt;address&gt; for Contact Information</h4>
+        <div class="padding">
+            <p>The HTML
+                <span class="pink">&lt;address&gt;</span> tag defines the contact information for the
+                author/owner of a document or an article.
+            </p>
+            <p>The contact information can be an email address,
+                URL, physical address, phone number, social media handle, etc.</p>
+            <p> The text in the
+                <span class="pink">&lt;address&gt;</span> element usually renders in italic, and browsers will
+                always add a line break before and after the
+                <span class="pink">&lt;address&gt;</span> element.
+
+            </p>
+        </div>
+        <!-- code -->
+        <div class=" bg2">
+            <div class="grey ">
+                <h4 class="heading3">Example</h4>
+                <!--Output-->
+                <h4 class="heading2">OUTPUT</h4>
+                <div class="white">
+                    <address>
+                        Written by John Doe.<br>
+                        Visit us at:<br>
+                        Example.com<br>
+                        Box 564, Disneyland<br>
+                        USA
+                    </address>
+                </div>
+                <!--html-->
+                <h4 class="heading2">HTML</h4>
+                <div class="white">
+                    <span class="b">&lt;<span class="br">address</span>&gt;</span><br>
+                    <span class="b">
+                        Written by John Doe. <span class="b">&lt;<span class="br">br</span>&gt;</span><br>
+                        Visit us at:<span class="b">&lt;<span class="br">br</span>&gt;</span><br>
+                        Example.com<span class="b">&lt;<span class="br">br</span>&gt;</span><br>
+                        Box 564, Disneyland<span class="b">&lt;<span class="br">br</span>&gt;</span><br>
+                        USA
+                    </span><br>
+                    <span class="b">&lt;<span class="br">/address</span>&gt;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--line6-->
+    <div class="text ">
+        <h4 class="heading1">HTML &lt;cite&gt; for Work Title</h4>
+        <div class="padding">
+            <p>The HTML <span class="pink">&lt;cite&gt;</span> tag
+                defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a
+                sculpture, etc.).
+            </p>
+            <p><span class="pink">Note:</span> A person's name is
+                not the title of a work.</p>
+            <p> The text in the <span class="pink">&lt;cite&gt;</span>
+                element usually renders in <i>italic</i>.
+
+            </p>
+        </div>
+        <!-- code -->
+        <div class=" bg2">
+            <div class="grey ">
+                <h4 class="heading3">Example</h4>
+                <!--Output-->
+                <h4 class="heading2">OUTPUT</h4>
+                <div class="white">
+                    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+                </div>
+                <!--html-->
+                <h4 class="heading2">HTML</h4>
+                <div class="white">
+                    <span class="b">&lt;<span class="br">p</span>&gt;</span>
+                    The <span class="b">&lt;<span class="br">cite</span></span>The Scream<span class="b">&lt;<span
+                            class="br">/cite</span>&gt;</span> by Edvard Munch.
+                    Painted in 1893.
+                    <span class="b">&lt;<span class="br">/p</span>&gt;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--line6-->
+    <div class="text ">
+        <h4 class="heading1">HTML &lt;bdo&gt; for Bi-Directional Override</h4>
+        <div class="padding">
+            <p>BDO stands for Bi-Directional Override.
+            </p>
+            <p>The HTML <span class="pink">&lt;bdo&gt;</span> tag
+                is used to override the current text direction:</i>.
+
+            </p>
+        </div>
+        <!-- code -->
+        <div class=" bg2">
+            <div class="grey ">
+                <h4 class="heading3">Example</h4>
+                <!--Output-->
+                <h4 class="heading2">OUTPUT</h4>
+                <div class="white">
+                    <bdo dir="rtl">This text will be written from right to left</bdo>
+                </div>
+                <!--html-->
+                <h4 class="heading2">HTML</h4>
+                <div class="white">
+
+                    <span class="b">&lt;<span class="br">bdo</span></span>
+                    <span class="r">dir</span><span class="b"> = "rtl"&gt;</span> text will be
+                    written from right to left
+                    <span class="b">&lt;<span class="br">/bdo</span>&gt;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Button -->
+    <div class="nextprev px-5 my-4">
+        <a href="html_formatting.html" class="left ">
+            &lt; Previous</a>
+        <a href="html_comments.html" class="right  "> Next &gt;</a>
+    </div>
+
+    <div class="For-Main4">&copy; 2023 Codeweb. All Rights Reserved</div>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+</html>

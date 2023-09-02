@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/c.ico">
+    <title>Codeweb</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+
+
+        $(document).ready(function () {
+            $(".burger").click(function () {
+                $(".For-Main1-3, .For-Main1-4").slideToggle();
+            });
+
+            $(".btn1").click(function () {
+                $(".sidebar").toggle();
+            });
+
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <div class="For-Main1">
+
+        <div class=" For-Main1-1"><img src="images/code.jpg" alt="" width="50" height="50"></div>
+
+        <a class="For-Main1-2" href="#">odeweb</a>
+
+        <div class="For-Main1-3">
+
+            <ul>
+                <li> <a href="html/html.html">HTML</a></li>
+                <li> <a href="css/css.html" class="padd">CSS</a></li>
+                <li><a href="php/php.html" class="padd">PHP</a></li>
+            </ul>
+        </div>
+        <div class=" For-Main1-4">
+            <a href="signup.html" class="btn">SignUp</a>
+        </div>
+        <div class="burger" onclick="myBurger()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+    <div class="For-Main2">
+        <p class="For-Main2-1">CODE<br>
+            <bdo dir="rtl">CODE</bdo>
+        </p>
+    </div>
+    <div class="For-Main3">
+        <div class="For-Main3-1">
+            <p class="title">HTML</p><br>
+            <p class="title_part">The language for builiding web
+                pages</p><br>
+            <a href="html/html.html" class="button1 ">Learn</a><br><br>
+        </div>
+        <div class="For-Main3-1">
+            <p class="title">CSS</p><br>
+            <p class="title_part">The language for styling web pages</p><br>
+            <a href="css/css.html" class="button1 ">Learn</a><br><br>
+        </div>
+        <div class="For-Main3-1">
+            <p class="title">PHP</p><br>
+            <p class="title_part">A web server programming language</p><br>
+            <a href="php/php.html" class="button1">Learn</a><br><br>
+        </div>
+    </div>
+    <div class="For-Main4">&copy; 2023 Codeweb. All Rights Reserved</div>
+</body>
+
+</html>

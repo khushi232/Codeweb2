@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/c.ico">
+    <title>Codeweb</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+
+
+        $(document).ready(function () {
+            $(".burger").click(function () {
+                $(".For-Main1-3, .For-Main1-4").slideToggle();
+            });
+
+            $(".btn1").click(function () {
+                $(".sidebar").toggle();
+            });
+
+
+        });
+
+    </script>
+    <style>
+        #cssactive9 {
+            background-color: #0d8ba0;
+            color: white !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="For-Main1">
+
+        <div class=" For-Main1-1"><img src="images/code.jpg" alt="" width="50" height="50"></div>
+
+        <a class="For-Main1-2" href="../index.html">odeweb</a>
+        <a class="btn1">Menu</a>
+
+        <div class="For-Main1-3">
+
+            <ul>
+                <li> <a href="../html/html.html">HTML</a></li>
+                <li> <a href="#" class="color padd">CSS</a></li>
+                <li><a href="../php/php.html" class="padd">PHP</a></li>
+            </ul>
+        </div>
+        <div class=" For-Main1-4">
+            <a href="../signup.html" class="btn">SignUp</a>
+        </div>
+        <div class="burger" onclick="myBurger()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <h4 class="tutorial">CSS TUTORIAL</h4>
+        <div class="links">
+            <a href="css.html" id="cssactive1">CSS Home</a>
+            <a href="css_intro.html" id="cssactive2">CSS Introduction</a>
+            <a href="css_syntax.html" id="cssactive3">CSS Syntax</a>
+            <a href="css_selectors.html" id="cssactive">CSS Selectors </a>
+            <a href="css_howto.html" id="cssactive5">CSS How To</a>
+            <a href="css_comments.html" id="cssactive6">CSS Comments</a>
+            <a href="css_margins.html" id="cssactive7">CSS Margin</a>
+            <a href="css_padding.html" id="cssactive8">CSS Padding</a>
+            <a href="css_dimension.html" id="cssactive9">CSS Height/Width</a>
+            <a href="css_boxmodel.html" id="cssactive10">CSS Box Model</a>
+        </div>
+    </div>
+
+    <!-- intro heading -->
+
+    <h4 class="heading">CSS Height, Width and Max-width
+        <!-- <button style="padding-right:39px;" class=" btn right  fs-6 menu " type="button" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Menu
+            </button> -->
+    </h4>
+
+    <!-- Button -->
+    <div class="nextprev">
+        <a href="css_padding.html" class="left ">
+            &lt; Previous</a>
+        <a href="css_boxmodel.html" class="right  "> Next &gt;</a>
+    </div>
+    <!--line1-->
+    <div class="text padding gap2">
+        <p>The CSS height and width properties are used to set
+            the height and width of an element.</p>
+
+        <p> The CSS max-width property is used to set the
+            maximum width of an element.</p>
+
+        </p>
+        <p style="font-size:20px; width: 100%; height:50px; border:1px lightgrey solid;" class="gap">This element
+            has a height of 50 pixels and a width of 100%.</p>
+
+    </div>
+
+    <!--line2-->
+    <div class="text ">
+        <h4 class="heading1">CSS Setting height and width</h4>
+        <div class="padding">
+            <p>The height and width properties are used to set the
+                height and width of an element.</p>
+
+            <p>The height and width properties do not include
+                padding, borders, or margins. It sets the height/width of the area inside the padding, border,
+                and margin of the element.</p>
+        </div>
+    </div>
+    <!--line2-->
+    <div class="text ">
+
+        <h4 class="heading1">CSS height and width Values</h4>
+        <div class="padding">
+            <p>The height and width properties may have the
+                following values:</p>
+
+            <ul class="padding">
+
+                <li>auto - This is default. The browser calculates the height and width</li>
+                <li> length - Defines the height/width in px, cm, etc.</li>
+                <li>% - Defines the height/width in percent of the containing block</li>
+                <li>initial - Sets the height/width to its default value</li>
+                <li>inherit - The height/width will be inherited from its parent value</li>
+            </ul>
+
+        </div>
+    </div>
+    <!--line2-->
+    <div class="text ">
+        <h4 class="heading1">CSS height and width Examples</h4>
+        <!-- code -->
+        <div class=" bg2">
+            <div class="grey ">
+                <h4 class="heading3">Example</h4>
+                <p class="padding"> Set the height and width of a
+                    &lt;div&gt; element:</p>
+                <!--Output-->
+                <h4 class="heading2">OUTPUT</h4>
+                <div class="white">
+                    <p>This is a paragraph.</p>
+                    <div class="style4"> This div element has a height of 200px and a width of 50%.
+                    </div>
+
+                </div>
+                <!--html-->
+                <h4 class="heading2">HTML</h4>
+                <div class=" white">
+                    <span class="b">&lt;<span class="br">head</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">style</span>&gt;</span><br>
+                    <span class="br">div</span> {<br>
+                    <span class="r">height</span> : <span class="b">200px</span>;<br>
+                    <span class="r">width</span> : <span class="b">50%</span>;<br>
+                    <span class="r">background-color</span> : <span class="b">powderblue</span>;<br>}<br>
+                    <span class="b">&lt;<span class="br">/style</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">/head</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">body</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">p</span>&gt;</span>
+                    <span class="bk">This is a paragraph</span>
+                    <span class="b">&lt;<span class="br">/p</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">div</span>&gt;</span>
+                    <span class="bk">This div element has a height of 200px and a width of 50%.</span>
+                    <span class="b">&lt;<span class="br">/div</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">/body</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">/html</span>&gt;</span>
+                </div>
+            </div>
+        </div>
+        <!-- code -->
+        <div class=" bg2">
+
+            <div class="grey ">
+                <h4 class="heading3">Example</h4>
+                <p class="padding"> Set the height and width of another
+                    &lt;div&gt; element:</p>
+                <!--Output-->
+                <h4 class="heading2 ">OUTPUT</h4>
+                <div class="white">
+                    <p>This is a paragraph.</p>
+                    <div class="styles"> This div element has a height of 100px and a width of 500px.
+                    </div>
+                </div>
+                <!--html-->
+                <h4 class="heading2">HTML</h4>
+                <div class=" white">
+                    <span class="b">&lt;<span class="br">head</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">style</span>&gt;</span><br>
+                    <span class="br">div</span> {<br>
+                    <span class="r">height</span> : <span class="b">100px</span>;<br>
+                    <span class="r">width</span> : <span class="b">500px</span>;<br>
+                    <span class="r">background-color</span> : <span class="b">powderblue</span>;<br>}<br>
+                    <span class="b">&lt;<span class="br">/style</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">/head</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">body</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">p</span>&gt;</span>
+                    <span class="bk">This is a paragraph</span>
+                    <span class="b">&lt;<span class="br">/p</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">div</span>&gt;</span>
+                    <span class="bk">This div element has a height of 100px and a width of 500px.</span>
+                    <span class="b">&lt;<span class="br">/div</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">/body</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">/html</span>&gt;</span>
+                </div>
+            </div>
+        </div>
+
+
+        <p class="blue gap"><span class="note">Note:</span> Remember that the height and
+            width properties do not include padding, borders, or margins! They set the height/width of the area inside
+            the
+            padding, border, and margin of the element!
+        </p>
+    </div>
+    <!--line2-->
+    <div class="text ">
+        <h4 class="heading1">Setting max-width</h4>
+        <div class="padding">
+            <p>The <span class="pink">max-width</span> property is used
+                to set the maximum width of an element.
+            </p>
+            <p> The <span class="pink">max-width</span> can be
+                specified in length values, like px, cm, etc., or in percent (%) of the containing block, or set to
+                none (this is default. Means that there is no maximum width).
+            </p>
+            <p>The problem with the
+                &lt;div&gt; above occurs when the browser window is smaller than the <span class="pink">width</span>
+                of the element (500px). The browser then adds a horizontal scrollbar to the page.
+            </p>
+            <p>Using <span class="pink">max-width</span> instead, in
+                this situation, will improve the browser's handling of small windows.
+            </p>
+            <p><span class="note">Tip:</span> Drag the browser
+                window to smaller than 500px wide, to see the difference between the two divs!
+            </p>
+            <p><span class="note">Note:</span> If you for some
+                reason use both the <span class="pink">width</span> property and the <span class="pink">max-width</span>
+                property on the same element, and the value of the <span class="pink">width</span> property is
+                larger
+                than
+                the <span class="pink">max-width</span>
+                property; the <span class="pink">max-width</span> property will be used (and the <span
+                    class="pink">width</span> property will be ignored).
+            </p>
+        </div>
+        <!-- code -->
+        <div class=" bg2">
+            <div class="grey ">
+                <h4 class="heading3">Example</h4>
+                <p class="padding"> This
+                    &lt;div&gt; element has a height of 100 pixels and a max-width of 500 pixels: </p>
+                <!--Output-->
+                <h4 class="heading2 ">OUTPUT</h4>
+
+                <div class="white">
+
+                    <p>This is a paragraph.</p>
+                    <div class="style5">This element has a height of 100 pixels and a max-width of 500
+                        pixels.</div>
+
+                </div>
+                <!--html-->
+                <h4 class="heading2">HTML</h4>
+                <div class="white">
+                    <span class="b">&lt;<span class="br">head</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">style</span>&gt;</span><br>
+                    <span class="br">div</span> {<br>
+                    <span class="r">height</span> : <span class="b">100px</span>;<br>
+                    <span class="r">max-width</span> : <span class="b">500px</span>;<br>
+                    <span class="r">background-color</span> : <span class="b">powderblue</span>;<br>}<br>
+                    <span class="b">&lt;<span class="br">/style</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">/head</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">body</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">p</span>&gt;</span>
+                    <span class="bk">This is a paragraph</span>
+                    <span class="b">&lt;<span class="br">/p</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">div</span>&gt;</span>
+                    <span class="bk">This element has a height of 100 pixels and a max-width of 500
+                        pixels.</span>
+                    <span class="b">&lt;<span class="br">/div</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">/body</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">/html</span>&gt;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Button -->
+    <div class="nextprev">
+        <a href="css_padding.html" class="left ">
+            &lt; Previous</a>
+        <a href="css_boxmodel.html" class="right  "> Next &gt;</a>
+    </div>
+
+    <div class="For-Main4">&copy; 2023 Codeweb. All Rights Reserved</div>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+</html>

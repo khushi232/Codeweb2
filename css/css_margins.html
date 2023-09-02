@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/c.ico">
+    <title>Codeweb</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+
+
+        $(document).ready(function () {
+            $(".burger").click(function () {
+                $(".For-Main1-3, .For-Main1-4").slideToggle();
+            });
+
+            $(".btn1").click(function () {
+                $(".sidebar").toggle();
+            });
+
+
+        });
+
+    </script>
+    <style>
+        #cssactive7 {
+            background-color: #0d8ba0;
+            color: white !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="For-Main1">
+
+        <div class=" For-Main1-1"><img src="images/code.jpg" alt="" width="50" height="50"></div>
+
+        <a class="For-Main1-2" href="../index.html">odeweb</a>
+        <a class="btn1">Menu</a>
+
+        <div class="For-Main1-3">
+
+            <ul>
+                <li> <a href="../html/html.html">HTML</a></li>
+                <li> <a href="#" class="color padd">CSS</a></li>
+                <li><a href="../php/php.html" class="padd">PHP</a></li>
+            </ul>
+        </div>
+        <div class=" For-Main1-4">
+            <a href="../signup.html" class="btn">SignUp</a>
+        </div>
+        <div class="burger" onclick="myBurger()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <h4 class="tutorial">CSS TUTORIAL</h4>
+        <div class="links">
+            <a href="css.html" id="cssactive1">CSS Home</a>
+            <a href="css_intro.html" id="cssactive2">CSS Introduction</a>
+            <a href="css_syntax.html" id="cssactive3">CSS Syntax</a>
+            <a href="css_selectors.html" id="cssactive">CSS Selectors </a>
+            <a href="css_howto.html" id="cssactive5">CSS How To</a>
+            <a href="css_comments.html" id="cssactive6">CSS Comments</a>
+            <a href="css_margins.html" id="cssactive7">CSS Margin</a>
+            <a href="css_padding.html" id="cssactive8">CSS Padding</a>
+            <a href="css_dimension.html" id="cssactive9">CSS Height/Width</a>
+            <a href="css_boxmodel.html" id="cssactive10">CSS Box Model</a>
+        </div>
+    </div>
+
+    <!-- intro heading -->
+
+    <h4 class="heading">CSS Margins </h4>
+
+    <!-- Button -->
+    <div class="nextprev">
+        <a href="css_comments.html" class="left ">
+            &lt; Previous</a>
+        <a href="css_padding.html" class="right  "> Next &gt;</a>
+    </div>
+    <!--line1-->
+    <div class="text padding gap2 ">
+
+        <p>Margins are used to create space around elements, outside
+            of any defined borders.</p>
+        <p class="element">This element has a margin of
+            70px.</p>
+
+    </div>
+    <!--line2-->
+    <div class="text ">
+        <h4 class="heading1">CSS Margins</h4>
+        <div class="padding">
+            <p>The CSS <span class="pink">margin</span> properties
+                are used to create space around elements, outside of any defined borders.</p>
+
+            <p>With CSS, you have full control over the margins.
+                There are properties for setting the margin for each side of an element (top, right, bottom, and
+                left).
+            </p>
+        </div>
+    </div>
+    <!--line2-->
+    <div class="text ">
+        <h4 class="heading1">Margin - Individual Sides</h4>
+        <div class="padding">
+            <p>CSS has properties for specifying the margin for
+                each side of an element: </p>
+            <ul class="padding">
+
+                <li> <span class="pink">margin-top</li>
+                </span>
+                <li> <span class="pink">margin-right</li>
+                <li> <span class="pink">margin-bottom</li>
+                <li> <span class="pink">margin-left</li>
+            </ul>
+            <p>All the margin properties can have the following
+                values:</p>
+            <ul class="padding">
+
+                <li>auto - the browser calculates the margin</li>
+                <li> length - specifies a margin in px, pt, cm, etc.</li>
+                <li>% - specifies a margin in % of the width of the containing element</li>
+                <li>inherit - specifies that the margin should be inherited from the parent element</li>
+            </ul>
+        </div>
+
+        <p class="blue bg gap"><span class="note">Tip:</span>
+            Negative values are allowed.
+            <!-- code -->
+        <div class=" bg2">
+            <div class="grey ">
+                <h4 class="heading3">Example</h4>
+                <p class="padding"> Set different margins for all four sides of
+                    a
+                    &lt;div&gt; element:</p>
+                <!--Output-->
+                <h4 class="heading2 ">OUTPUT</h4>
+                <div class="white">
+                    <p>This is a paragraph.</p>
+                    <div class="style"> This div element has a top margin of 100px, a right margin of
+                        150px, a bottom margin of 100px, and a left margin of 80px.</div>
+
+                </div>
+                <!--html-->
+                <h4 class="heading2">HTML</h4>
+                <div class="white">
+                    <span class="b">&lt;<span class="br">head</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">style</span>&gt;</span><br>
+                    <span class="br">div</span> {<br>
+                    <span class="r">border</span> : <span class="b">1px solid black</span>;<br>
+                    <span class="r">margin-top</span> : <span class="b">100px</span>;<br>
+                    <span class="r">margin-bottom</span> : <span class="b">100px</span>;<br>
+                    <span class="r">margin-right</span> : <span class="b">150px</span>;<br>
+                    <span class="r">margin-left</span> : <span class="b">80px</span>;<br>
+                    <span class="r">background-color</span> : <span class="b">lightblue</span>;<br>}<br>
+                    <span class="b">&lt;<span class="br">/style</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">/head</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">body</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">p</span>&gt;</span>
+                    <span class="bk">This is a paragraph</span>
+                    <span class="b">&lt;<span class="br">/p</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">div</span>&gt;</span>
+                    <span class="bk">This div element has a top margin of 100px, a right margin of
+                        150px, a bottom margin of 100px, and a left margin of 80px.</span>
+                    <span class="b">&lt;<span class="br">/div</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">/body</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">/html</span>&gt;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--line3-->
+    <div class="text  ">
+
+        <h4 class="heading1">Margin - Shorthand Property</h4>
+        <div class="padding">
+            <p>To shorten the code, it is possible to specify all the
+                margin properties in one property.</p>
+
+            <p> The <span class="pink">margin</span> property is a
+                shorthand property for the following individual margin properties:
+            </p>
+            <ul class="padding">
+
+                <li> <span class=" pink">margin-top</li>
+                </span>
+                <li> <span class="pink">margin-right</li> </span>
+                <li> <span class="pink">margin-bottom</li> </span>
+                <li> <span class="pink">margin-left</li> </span>
+            </ul>
+            <p> So, here is how it works:</p>
+
+            <p> If the <span class="pink">margin</span>property has
+                four values:</p>
+            <ul class="padding">
+                <li><span class="note">margin: 25px 50px 75px 100px;</span>
+                    <ul class="padding" type="circle;">
+                        <li>top margin is 25px</li>
+                        <li> right margin is 50px</li>
+                        <li>bottom margin is 75px</li>
+                        <li>left margin is 100px</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- code -->
+        <div class="  bg2">
+            <div class="grey ">
+                <h4 class="heading3">Example</h4>
+                <p class="padding">Use the margin shorthand property with four
+                    values:</p>
+                <!--Output-->
+                <h4 class="heading2">OUTPUT</h4>
+                <div class="white">
+                    <h4>This is a heading</h4>
+                    <p style="margin:25px 50px 75px 100px; border:1px solid black; background-color:lightblue;">
+                        This is a paragraph.</p>
+                </div>
+                <!--html-->
+                <h4 class="heading2">HTML</h4>
+                <div class="white">
+                    <span class="b">&lt;<span class="br">head</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">style</span>&gt;</span><br>
+                    <span class="br">p</span> {<br>
+                    <span class="r">margin</span> : <span class="b">25px 50px 75px 100px</span>;<br>
+                    <span class="r">border</span> : <span class="b">1px solid black</span>;<br>
+                    <span class="r">background-color</span> : <span class="b">lightblue</span>;<br>}<br>
+                    <span class="b">&lt;<span class="br">/style</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">/head</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">body</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">h4</span>&gt;</span>
+                    <span class="bk">This is a heading</span>
+                    <span class="b">&lt;<span class="br">/h4</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">p</span>&gt;</span>
+                    <span class="bk">This is a paragraph.</span>
+                    <span class="b">&lt;<span class="br">/p</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">/body</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">/html</span>&gt;</span>
+                </div>
+            </div>
+        </div>
+        <div class=" padding gap">
+            <p> If the <span class=" pink">margin</span> property has three
+                values:</p>
+            <ul class="padding">
+                <li><span class="note">margin: 25px 50px 75px;</span>
+                    <ul class="padding" type="circle;">
+                        <li>top margin is 25px</li>
+                        <li> right nad left margins are 50px</li>
+                        <li>bottom margin is 75px</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- code -->
+        <div class="  bg2">
+            <div class="grey ">
+                <h4 class="heading3">Example</h4>
+                <p class="padding">Use the margin shorthand property with three
+                    values:</p>
+                <!--Output-->
+                <h4 class="heading2">OUTPUT</h4>
+                <div class="white">
+                    <h4>This is a heading</h4>
+                    <p style="margin:25px 50px 75px; border:1px solid black; background-color:lightblue;">
+                        This is a paragraph.</p>
+                </div>
+                <!--html-->
+                <h4 class="heading2">HTML</h4>
+                <div class="white">
+                    <span class="b">&lt;<span class="br">head</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">style</span>&gt;</span><br>
+                    <span class="br">p</span> {<br>
+                    <span class="r">margin</span> : <span class="b">25px 50px 75px</span>;<br>
+                    <span class="r">border</span> : <span class="b">1px solid black</span>;<br>
+                    <span class="r">background-color</span> : <span class="b">lightblue</span>;<br>}<br>
+                    <span class="b">&lt;<span class="br">/style</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">/head</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">body</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">h4</span>&gt;</span>
+                    <span class="bk">This is a heading</span>
+                    <span class="b">&lt;<span class="br">/h4</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">p</span>&gt;</span>
+                    <span class="bk">This is a paragraph.</span>
+                    <span class="b">&lt;<span class="br">/p</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">/body</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">/html</span>&gt;</span>
+                </div>
+            </div>
+        </div>
+        <div class="padding gap">
+            <p> If the <span class="pink">margin</span> property has two
+                values:</p>
+            <ul class="padding">
+                <li><span class="note">margin: 25px 50px;</span>
+                    <ul class="padding" type="circle;">
+                        <li>top and bottom margins are 25px</li>
+                        <li> right and left margins are 50px</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- code -->
+        <div class="  bg2">
+            <div class="grey ">
+                <h4 class="heading3">Example</h4>
+                <p class="padding">Use the margin shorthand property with two
+                    values:</p>
+                <!--Output-->
+                <h4 class="heading2">OUTPUT</h4>
+                <div class="white">
+                    <h4>This is a heading</h4>
+                    <p style="margin:25px 50px; border:1px solid black; background-color:lightblue;">This is
+                        a paragraph.</p>
+                </div>
+                <!--html-->
+                <h4 class="heading2">HTML</h4>
+                <div class="white">
+
+                    <span class="b">&lt;<span class="br">head</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">style</span>&gt;</span><br>
+                    <span class="br">p</span> {<br>
+                    <span class="r">margin</span> : <span class="b">25px 50px</span>;<br>
+                    <span class="r">border</span> : <span class="b">1px solid black</span>;<br>
+                    <span class="r">background-color</span> : <span class="b">lightblue</span>;<br>}<br>
+                    <span class="b">&lt;<span class="br">/style</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">/head</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">body</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">h4</span>&gt;</span>
+                    <span class="bk">This is a heading</span>
+                    <span class="b">&lt;<span class="br">/h4</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">p</span>&gt;</span>
+                    <span class="bk">This is a paragraph.</span>
+                    <span class="b">&lt;<span class="br">/p</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">/body</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">/html</span>&gt;</span>
+                </div>
+            </div>
+        </div>
+        <div class="padding gap">
+            <p> If the <span class="pink">margin</span> property has one
+                values:</p>
+            <ul class="padding">
+                <li><span class="note">margin: 25px;</span>
+                    <ul class="padding" type="circle;">
+                        <li>all four margins are 25px</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- code -->
+        <div class="  bg2">
+            <div class="grey ">
+                <h4 class="heading3">Example</h4>
+                <p class="padding">Use the margin shorthand property with one
+                    values:</p>
+                <!--Output-->
+                <h4 class="heading2">OUTPUT</h4>
+                <div class="white">
+                    <h4>This is a heading</h4>
+                    <p style="margin:25px; border:1px solid black; background-color:lightblue;">This is a
+                        paragraph.</p>
+                </div>
+                <!--html-->
+                <h4 class="heading2">HTML</h4>
+                <div class="white">
+                    <span class="b">&lt;<span class="br">head</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">style</span>&gt;</span><br>
+                    <span class="br">p</span> {<br>
+                    <span class="r">margin</span> : <span class="b">25px</span>;<br>
+                    <span class="r">border</span> : <span class="b">1px solid black</span>;<br>
+                    <span class="r">background-color</span> : <span class="b">lightblue</span>;<br>}<br>
+                    <span class="b">&lt;<span class="br">/style</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">/head</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">body</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">h4</span>&gt;</span>
+                    <span class="bk">This is a heading</span>
+                    <span class="b">&lt;<span class="br">/h4</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">p</span>&gt;</span>
+                    <span class="bk">This is a paragraph.</span>
+                    <span class="b">&lt;<span class="br">/p</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">/body</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">/html</span>&gt;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--line3-->
+    <div class="text ">
+
+        <h4 class="heading1">The auto Value</h4>
+
+        <div class="padding">
+            <p>You can set the margin property to auto to horizontally
+                center the element within its container.
+            </p>
+            <p>The element will then take up the specified width, and
+                the remaining space will be split equally between the left and right margins.</p>
+
+
+        </div>
+
+        <!-- code -->
+        <div class="  bg2">
+            <div class="grey ">
+                <h4 class="heading3">Example</h4>
+                <p class="padding">Use margin auto:</p>
+                <!--Output-->
+                <h4 class=" heading2">OUTPUT
+                </h4>
+                <div class="white">
+                    <p>This is a paragraph.</p>
+                    <div class="style2">This is a div</div>
+                </div>
+                <!--html-->
+                <h4 class="heading2">HTML</h4>
+                <div class="white">
+
+                    <span class="b">&lt;<span class="br">head</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">style</span>&gt;</span><br>
+                    <span class="br">div</span> {<br>
+                    <span class="r">width</span> : <span class="b">300px</span>;<br>
+                    <span class="r">border</span> : <span class="b">1px solid red</span>;<br>
+                    <span class="r">margin</span> : <span class="b">auto</span>;<br>
+
+                    }<br>
+                    <span class="b">&lt;<span class="br">/style</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">/head</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">body</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">p</span>&gt;</span>
+                    <span class="bk">This is a paragraph</span>
+                    <span class="b">&lt;<span class="br">/p</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">div</span>&gt;</span>
+                    <span class="bk">This div element has a top margin of 100px, a right margin of 150px, a
+                        bottom margin of 100px, and a left margin of 80px.</span>
+                    <span class="b">&lt;<span class="br">/div</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">/body</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">/html</span>&gt;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--line3-->
+    <div class="text  ">
+
+        <h4 class="heading1">The inherit Value</h4>
+        <p class="padding">This example lets the left margin of the
+            &lt;p class="ex1"&gt; element be inherited from the parent element (
+            &lt;div&gt;):
+
+
+            <!-- code -->
+        <div class="  bg2">
+            <div class="grey ">
+                <h4 class="heading3">Example</h4>
+                <p class="padding">Use of the inherit value:</p>
+                <!--Output-->
+                <h4 class="heading2">OUTPUT</h4>
+                <div class="white">
+                    <p>This is a paragraph.</p>
+                    <div class="style3">
+                        <p style="margin-left:inherit;">This paragraph has an inherited left margin (from
+                            the div element).</p>
+                    </div>
+                </div>
+            </div>
+            <!--html-->
+            <h4 class="heading2">HTML</h4>
+            <div class="white">
+
+                <span class="b">&lt;<span class="br">head</span>&gt;</span><br>
+                <span class="b">&lt;<span class="br">style</span>&gt;</span><br>
+                <span class="br">div</span> {<br>
+                <span class="r">border</span> : <span class="b">1px solid red</span>;<br>
+                <span class="r">margin-left</span> : <span class="b">100px</span>;<br>
+                }<br><br>
+                <span class="br">p.ex1</span> {<br>
+                <span class="r">margin-left</span> : <span class="b">inherit</span>;<br>
+                }<br>
+                <span class="b">&lt;<span class="br">/style</span>&gt;</span><br>
+                <span class="b">&lt;<span class="br">/head</span>&gt;</span><br>
+                <span class="b">&lt;<span class="br">body</span>&gt;</span><br><br>
+                <span class="b">&lt;<span class="br">p</span>&gt;</span>
+                <span class="bk">This is a paragraph</span>
+                <span class="b">&lt;<span class="br">/p</span>&gt;</span><br>
+                <span class="b">&lt;<span class="br">div</span>&gt;</span>
+                <span class="b">&lt;<span class="br">p <span class="r">class</span> = <span
+                            class="b">"ex1"</span></span>&gt;</span>
+                <span class="bk">This paragraph has an inherited left margin (from the div
+                    element).</span>
+                <span class="b">&lt;<span class="br">/p</span>&gt;</span><br>
+                <span class="b">&lt;<span class="br">/div</span>&gt;</span><br><br>
+                <span class="b">&lt;<span class="br">/body</span>&gt;</span><br>
+                <span class="b">&lt;<span class="br">/html</span>&gt;</span>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    <!-- Button -->
+    <div class="nextprev">
+        <a href="css_comments.html" class="left ">
+            &lt; Previous</a>
+        <a href="css_padding.html" class="right  "> Next &gt;</a>
+    </div>
+
+    <div class="For-Main4">&copy; 2023 Codeweb. All Rights Reserved</div>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+</html>

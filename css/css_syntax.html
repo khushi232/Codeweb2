@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/c.ico">
+    <title>Codeweb</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+
+
+        $(document).ready(function () {
+            $(".burger").click(function () {
+                $(".For-Main1-3, .For-Main1-4").slideToggle();
+            });
+
+            $(".btn1").click(function () {
+                $(".sidebar").toggle();
+            });
+
+
+        });
+
+    </script>
+    <style>
+        #cssactive3 {
+            background-color: #0d8ba0;
+            color: white !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="For-Main1">
+
+        <div class=" For-Main1-1"><img src="images/code.jpg" alt="" width="50" height="50"></div>
+
+        <a class="For-Main1-2" href="../index.html">odeweb</a>
+        <a class="btn1">Menu</a>
+
+        <div class="For-Main1-3">
+
+            <ul>
+                <li> <a href="../html/html.html">HTML</a></li>
+                <li> <a href="#" class="color padd">CSS</a></li>
+                <li><a href="../php/php.html" class="padd">PHP</a></li>
+            </ul>
+        </div>
+        <div class=" For-Main1-4">
+            <a href="../signup.html" class="btn">SignUp</a>
+        </div>
+        <div class="burger" onclick="myBurger()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <h4 class="tutorial">CSS TUTORIAL</h4>
+        <div class="links">
+            <a href="css.html" id="cssactive1">CSS Home</a>
+            <a href="css_intro.html" id="cssactive2">CSS Introduction</a>
+            <a href="css_syntax.html" id="cssactive3">CSS Syntax</a>
+            <a href="css_selectors.html" id="cssactive">CSS Selectors </a>
+            <a href="css_howto.html" id="cssactive5">CSS How To</a>
+            <a href="css_comments.html" id="cssactive6">CSS Comments</a>
+            <a href="css_margins.html" id="cssactive7">CSS Margin</a>
+            <a href="css_padding.html" id="cssactive8">CSS Padding</a>
+            <a href="css_dimension.html" id="cssactive9">CSS Height/Width</a>
+            <a href="css_boxmodel.html" id="cssactive10">CSS Box Model</a>
+        </div>
+    </div>
+    <!-- Tutorial heading -->
+
+    <h4 class="heading">CSS Syntax </h4>
+
+    <!-- Button -->
+    <div class="nextprev">
+        <a href="css_intro.html" class="left ">
+            &lt; Previous</a>
+        <a href="css_selectors.html" class="right  "> Next &gt;</a>
+    </div>
+
+    <!-- line1 -->
+    <div class="text padding gap2">
+        <p>A CSS rule consists of a selector and a
+            declaration block.<br>
+        </p>
+    </div>
+    <!-- line2 -->
+    <div class="text">
+        <h4 class="heading1">CSS Syntax</h4>
+        <span class="padding" style="font-size:25px;">Selector <span class="padding">Declaration<span
+                    class="padding">Declaration</span></span></span><br><br>
+        <span class="syntax"> h1</span>
+        <span class="syntax2">
+            {color:blue; font-size:12px;}</span><br><br>
+        <span style="margin-left:10%; font-size:20px;">
+            {property:value; property:value;}</span>
+
+        <div class="padding">
+            <p>The selector points to the HTML element
+                you want to style.</p>
+
+            <p>The declaration block contains one or
+                more declarations separated by semicolons.</p>
+            <p>Each declaration includes a CSS property
+                name and a value, separated by a colon.</p>
+
+            <p>Multiple CSS declarations are separated
+                with semicolons, and declaration blocks are surrounded by curly braces.
+            </p>
+        </div>
+
+        <!-- code -->
+        <div class=" bg2">
+            <div class="grey ">
+                <h4 class="heading3">Example</h4>
+                <p class="padding">In this example all
+                    &lt;p&gt; elements will be center-aligned, with a red text color:</p>
+                <!--Output-->
+                <h4 class="heading2">OUTPUT</h4>
+                <div class="white" style="line-height:1.8rem;">
+                    <p style="color: red;
+  text-align: center;">Hello World!</p>
+                    <p style="color: red;
+  text-align: center;">These paragraphs are styled with CSS.</p>
+
+                </div>
+                <!--html-->
+                <h4 class=" heading2">HTML</h4>
+                <div class="white">
+                    <span class="b">&lt;<span class="br">!DOCTYPE</span></span>
+                    <span class="b"><span class="r">html</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">html</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">head</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">style</span>&gt;</span><br>
+                    <span class="br">p</span>
+                    <span class="bk">{<span class="r"> color</span> : <span class="b">red</span>;<br>
+                        <span class="r"> text-align</span> : <span class="b">center</span>;<br>}</span><br>
+                    <span class="b">&lt;<span class="br">/style</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">/head</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">body</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">p
+                            <span class="r">style</span> <span class="bk">= " <span class="b">color
+                                    :
+                                    red;</span>"</span>
+                        </span>&gt;</span>
+                    <span class="bk">Hello World!</span>
+                    <span class="b">&lt;<span class="br">/p</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">p</span>&gt;</span>
+                    <span class="bk">This is a paragraph.</span>
+                    <span class="b">&lt;<span class="br">/p</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">/body</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">/html</span>&gt;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- line3-->
+    <div class="text ">
+        <h4 class="heading1">Example Explained</h4>
+        <ul class="padding2">
+            <li><span class="pink">p</span> is a selector in CSS (it points to the HTML element
+                you want to style: &lt;p&gt;).</li>
+            <li><span class="pink"> color</span> is a property, and red is the property value
+            </li>
+            <li><span class="pink">text-align</span> is a property, and center is the property
+                value</li>
+
+    </div>
+    <!-- Button -->
+    <div class="nextprev">
+        <a href="css_intro.html" class="left ">
+            &lt; Previous</a>
+        <a href="css_selectors.html" class="right  "> Next &gt;</a>
+    </div>
+    </div>
+    <div class="For-Main4">&copy; 2023 Codeweb. All Rights Reserved</div>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+</html>

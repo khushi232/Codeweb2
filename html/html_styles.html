@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/c.ico">
+    <title>Codeweb</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+
+
+        $(document).ready(function () {
+            $(".burger").click(function () {
+                $(".For-Main1-3, .For-Main1-4").slideToggle();
+            });
+
+            $(".btn1").click(function () {
+                $(".sidebar").toggle();
+            });
+
+
+        });
+
+    </script>
+    <style>
+        #active8 {
+            background-color: #0d8ba0;
+            color: white !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="For-Main1">
+
+        <div class=" For-Main1-1"><img src="images/code.jpg" alt="" width="50" height="50"></div>
+
+        <a class="For-Main1-2" href="../index.html">odeweb</a>
+        <a class="btn1">Menu</a>
+
+        <div class="For-Main1-3">
+
+            <ul>
+                <li> <a href=" #" class="color">HTML</a></li>
+                <li> <a href="../css/css.html" class="padd">CSS</a></li>
+                <li><a href="../php/php.html" class="padd">PHP</a></li>
+            </ul>
+        </div>
+        <div class=" For-Main1-4">
+            <a href="../signup.html" class="btn">SignUp</a>
+        </div>
+        <div class="burger" onclick="myBurger()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+
+
+    <div class="sidebar">
+        <h4 class="tutorial">HTML TUTORIAL</h4>
+        <div class="links">
+            <a href="html.html" id="active1">HTML Home</a>
+            <a href="html_intro.html" id="active2">HTML Introduction</a>
+            <a href="html_editors.html" id="active3">HTML Editors</a>
+            <a href="html_basic.html" id="active4">HTML Basic </a>
+            <a href="html_elements.html" id="active15">HTML Elements</a>
+            <a href="html_headings.html" id="active6">HTML Headings</a>
+            <a href="html_paragraphs.html" id="active7">HTML Paragraphs</a>
+            <a href="html_styles.html" id="active8">HTML Styles</a>
+            <a href="html_formatting.html" id="active9">HTML Formatting</a>
+            <a href="html_quotation.html" id="active10">HTML Quotation</a>
+            <a href="html_comments.html" id="active11">HTML Comments</a>
+            <a href="html_favicon.html" id="active12">HTML Favicon</a>
+            <a href="html_list.html" id="active13">HTML Lists</a>
+            <a href="html_block.html" id="active14">HTML Block and Inline</a>
+        </div>
+    </div>
+
+    <!-- intro heading -->
+
+    <h4 class="heading">HTML Styles
+
+    </h4>
+
+    <!-- Button -->
+    <div class="nextprev">
+        <a href="html_paragraphs.html" class="left ">
+            &lt; Previous</a>
+        <a href="html_formatting.html" class="right  "> Next &gt;</a>
+    </div>
+    <!--line1-->
+    <div class="text padding gap2">
+        <p>The HTML style attribute is used to add styles to an
+            element, such as color, font, size, and more.
+        </p>
+    </div>
+    <!--line2-->
+    <div class="text ">
+        <h4 class="heading1">The HTML Style Attribute</h4>
+        <div class="padding">
+            <p>Setting the style of an HTML element, can be done
+                with the style attribute.</p>
+            <p>The HTML style attribute has the following syntax:
+            </p>
+        </div>
+        <!-- code -->
+        <div class=" bg2">
+            <div class="grey ">
+                <h4 class="heading3">Example</h4>
+                <!--html-->
+                <h4 class="heading2">HTML</h4>
+                <div class="white">
+                    <span class="b">&lt;<span class="br">tagname</span></span>
+                    <span class="r">style</span>
+                    <span class="b">="property value;"&gt;</span><br>
+                </div>
+            </div>
+        </div>
+
+        <p class="padding gap">The property is a CSS property. The value is a CSS value.
+        </p>
+        <!-- code -->
+        <div class=" bg2">
+            <div class="grey ">
+                <h4 class="heading3">Example</h4>
+                <!--output-->
+                <h4 class="heading2">OUTPUT</h4>
+                <div class="white">
+                    <p>I am normal</p>
+                    <p class="r">I am red</p>
+                    <p style="color:blue;">I am blue</p>
+                    <p style="font-size:50px;">I am big</p>
+                </div>
+                <!--html-->
+                <h4 class="heading2">HTML</h4>
+                <div class="white">
+                    <span class="b">&lt;<span class="br">p</span>&gt;</span>
+                    <span class="bk">I am normal</span>
+                    <span class="b">&lt;<span class="br">/>p</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">p</span></span>
+                    <span class="r">style</span>
+                    <span class="b">="color : red;"&gt;</span>
+                    <span class="bk">I am red</span>
+                    <span class="b">&lt;<span class="br">/>p</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">p</span></span>
+                    <span class="r">style</span>
+                    <span class="b">="color : blue;"&gt;</span>
+                    <span class="bk">I am blue</span>
+                    <span class="b">&lt;<span class="br">/>p</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">p</span></span>
+                    <span class="r">style</span>
+                    <span class="b">="font-size : 50px;"&gt;</span>
+                    <span class="bk">I am big</span>
+                    <span class="b">&lt;<span class="br">/>p</span>&gt;</span><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--line4-->
+    <div class="text ">
+        <h4 class="heading1">Background Color</h4>
+        <div class="padding">
+            <p>The CSS background-color property defines the
+                background color for an HTML element.</p>
+        </div>
+
+        <!-- code -->
+        <div class=" bg2">
+            <div class="grey ">
+                <h4 class="heading3">Example</h4>
+                <p class="padding">Set the background color for a page to
+                    powderblue:</p>
+                <!--Output-->
+                <h4 class="heading2">OUTPUT</h4>
+                <div class="white ">
+                    <h4>This is a heading</h4>
+                    <p>This is a paragraph.</p>
+                </div>
+                <!--html-->
+                <h4 class="heading2">HTML</h4>
+                <div class="white">
+                    <span class="b">&lt;<span class="br">!DOCTYPE</span></span>
+                    <span class="b"><span class="r">html</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">html</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">body</span></span>
+                    <span class="r">style</span>
+                    <span class="b">="backgroundcolor : powderblue;"&gt;</span><br>
+                    <br> <span class="b">&lt;<span class="br">h4</span>&gt;</span>
+                    <span class="bk">This is a heading</span>
+                    <span class="b">&lt;<span class="br">/h4</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">p</span>&gt;</span>
+                    <span class="bk">This is a paragraph.</span>
+                    <span class="b">&lt;<span class="br">/p</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">/body</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">/html</span>&gt;</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- code -->
+        <div class=" bg2">
+            <div class="grey ">
+                <h4 class="heading3">Example</h4>
+                <p class="padding">Set background color for two different
+                    elements:</p>
+                <!--Output-->
+                <h4 class="heading2">OUTPUT</h4>
+                <div class="white">
+                    <h4 style="background-color:powderblue;">This is a heading</h4>
+                    <p style="background-color:tomato;">This is a paragraph.</p>
+                </div>
+                <!--html-->
+                <h4 class="heading2">HTML</h4>
+                <div class="white">
+                    <span class="b">&lt;<span class="br">h4</span></span>
+                    <span class="r">style</span>
+                    <span class="b">="backgroundcolor : powderblue;"&gt;</span>
+                    <span class="bk">This is a heading</span>
+                    <span class="b">&lt;<span class="br">/h4</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">p</span></span>
+                    <span class="r">style</span>
+                    <span class="b">="backgroundcolor : tomato;"&gt;</span>
+                    <span class="bk">This is a paragraph.</span>
+                    <span class="b">&lt;<span class="br">/p</span>&gt;</span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--line5-->
+    <div class="text  ">
+        <h4 class="heading1">Text Color</h4>
+        <p class="padding">The CSS color property defines the text color for an
+            HTML element:
+        </p>
+        <!-- code -->
+        <div class=" bg2">
+            <div class="grey ">
+                <h4 class="heading3">Example</h4>
+                <!--Output-->
+                <h4 class="heading2">OUTPUT</h4>
+                <div class="white">
+                    <h4 style="color:blue;">This is a heading</h4>
+                    <p class="r">This is a paragraph.</p>
+
+                </div>
+                <!--html-->
+                <h4 class="heading2">HTML</h4>
+                <div class="white">
+                    <span class="b">&lt;<span class="br">h4</span></span>
+                    <span class="r">style</span>
+                    <span class="b">="color : blue;"&gt;</span>
+                    <span class="bk">This is a heading</span>
+                    <span class="b">&lt;<span class="br">/h4</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">p</span></span>
+                    <span class="r">style</span>
+                    <span class="b">="color : red;"&gt;</span>
+                    <span class="bk">This is a paragraph.</span>
+                    <span class="b">&lt;<span class="br">/p</span>&gt;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--line6-->
+    <div class="text  ">
+        <h4 class="heading1">Fonts</h4>
+        <p class="padding">The CSS font-family property defines the font to be
+            used for an HTML element:
+        </p>
+        <!-- code -->
+        <div class=" bg2">
+            <div class="grey ">
+                <h4 class="heading3">Example</h4>
+                <!--Output-->
+                <h4 class="heading2">OUTPUT</h4>
+                <div class="white">
+                    <h4 style="font-family:verdana;">This is a heading</h4>
+                    <p style="font-family:courier;">This is a paragraph.</p>
+
+                </div>
+                <!--html-->
+                <h4 class="heading2">HTML</h4>
+                <div class="white">
+                    <span class="b">&lt;<span class="br">h4</span></span>
+                    <span class="r">style</span>
+                    <span class="b">="font-family : verdana;"&gt;</span>
+                    <span class="bk">This is a heading</span>
+                    <span class="b">&lt;<span class="br">/h4</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">p</span></span>
+                    <span class="r">style</span>
+                    <span class="b">="font-family : courier;"&gt;</span>
+                    <span class="bk">This is a paragraph.</span>
+                    <span class="b">&lt;<span class="br">/p</span>&gt;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--line7-->
+    <div class="text  ">
+        <h4 class="heading1">Text Size</h4>
+        <p class="padding">The CSS font-size property defines the text size for
+            an HTML element:
+        </p>
+        <!-- code -->
+        <div class=" bg2">
+            <div class="grey ">
+                <h4 class="heading3">Example</h4>
+                <!--Output-->
+                <h4 class="heading2">OUTPUT</h4>
+
+                <div class="white">
+                    <h4 style="font-size:300%;">This is a heading</h4>
+                    <p style="font-size:160%;">This is a paragraph.</p>
+                </div>
+                <!--html-->
+                <h4 class="heading2">HTML</h4>
+                <div class="white">
+                    <span class="b">&lt;<span class="br">h4</span></span>
+                    <span class="r">style</span>
+                    <span class="b">="font-size : 300%;"&gt;</span>
+                    <span class="bk">This is a heading</span>
+                    <span class="b">&lt;<span class="br">/h4</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">p</span></span>
+                    <span class="r">style</span>
+                    <span class="b">="font-size : 160%;"&gt;</span>
+                    <span class="bk">This is a paragraph.</span>
+                    <span class="b">&lt;<span class="br">/p</span>&gt;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--line8-->
+    <div class="text  ">
+        <h4 class="heading1">Text Alignment</h4>
+        <p class="padding">The CSS text-align property defines the horizontal
+            text alignment for an HTML element:
+        </p>
+        <!-- code -->
+        <div class=" bg2">
+            <div class="grey ">
+                <h4 class="heading3">Example</h4>
+                <!--Output-->
+                <h4 class="heading2">OUTPUT</h4>
+                <div class="white">
+                    <h4 style="text-align:center;">Centered Heading</h4>
+                    <p style="text-align:center;">Centered paragraph.</p>
+                </div>
+                <!--html-->
+                <h4 class="heading2">HTML</h4>
+                <div class="white">
+                    <span class="b">&lt;<span class="br">h4</span></span>
+                    <span class="r">style</span>
+                    <span class="b">="text-align : center;"&gt;</span>
+                    <span class="bk">This is a heading</span>
+                    <span class="b">&lt;<span class="br">/h4</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">p</span></span>
+                    <span class="r">style</span>
+                    <span class="b">="text-align : center;"&gt;</span>
+                    <span class="bk">This is a paragraph.</span>
+                    <span class="b">&lt;<span class="br">/p</span>&gt;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Button -->
+    <div class="nextprev">
+        <a href="html_paragraphs.html" class="left ">
+            &lt; Previous</a>
+        <a href="html_formatting.html" class="right  "> Next &gt;</a>
+    </div>
+    <div class="For-Main4">&copy; 2023 Codeweb. All Rights Reserved</div>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/c.ico">
+    <title>Codeweb</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+
+
+        $(document).ready(function () {
+            $(".burger").click(function () {
+                $(".For-Main1-3, .For-Main1-4").slideToggle();
+            });
+
+            $(".btn1").click(function () {
+                $(".sidebar").toggle();
+            });
+
+
+        });
+
+    </script>
+    <style>
+        #cssactive10 {
+            background-color: #0d8ba0;
+            color: white !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="For-Main1">
+
+        <div class=" For-Main1-1"><img src="images/code.jpg" alt="" width="50" height="50"></div>
+
+        <a class="For-Main1-2" href="../index.html">odeweb</a>
+        <a class="btn1">Menu</a>
+
+        <div class="For-Main1-3">
+
+            <ul>
+                <li> <a href="../html/html.html">HTML</a></li>
+                <li> <a href="#" class="color padd">CSS</a></li>
+                <li><a href="../php/php.html" class="padd">PHP</a></li>
+            </ul>
+        </div>
+        <div class=" For-Main1-4">
+            <a href="../signup.html" class="btn">SignUp</a>
+        </div>
+        <div class="burger" onclick="myBurger()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <h4 class="tutorial">CSS TUTORIAL</h4>
+        <div class="links">
+            <a href="css.html" id="cssactive1">CSS Home</a>
+            <a href="css_intro.html" id="cssactive2">CSS Introduction</a>
+            <a href="css_syntax.html" id="cssactive3">CSS Syntax</a>
+            <a href="css_selectors.html" id="cssactive">CSS Selectors </a>
+            <a href="css_howto.html" id="cssactive5">CSS How To</a>
+            <a href="css_comments.html" id="cssactive6">CSS Comments</a>
+            <a href="css_margins.html" id="cssactive7">CSS Margin</a>
+            <a href="css_padding.html" id="cssactive8">CSS Padding</a>
+            <a href="css_dimension.html" id="cssactive9">CSS Height/Width</a>
+            <a href="css_boxmodel.html" id="cssactive10">CSS Box Model</a>
+        </div>
+    </div>
+
+    <!-- intro heading -->
+
+    <h4 class="heading">CSS Box Model
+        <!-- <button style="padding-right:39px;" class=" btn right  fs-6 menu " type="button" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Menu
+            </button> -->
+    </h4>
+
+    <!-- Button -->
+    <div class="nextprev">
+        <a href="css_dimension.html" class="left ">
+            &lt; Previous</a>
+        <a href="css.html" class="right  "> Home &gt;</a>
+    </div>
+    <!--line1-->
+    <div class="text padding gap2">
+        <p>All HTML elements can be considered as boxes.</p>
+
+    </div>
+
+    <!--line2-->
+    <div class="text ">
+
+        <h4 class="heading1">The CSS Box Model</h4>
+        <div class="padding">
+            <p>In CSS, the term "box model" is used when talking
+                about design and layout.</p>
+
+            <p>The CSS box model is essentially a box that wraps
+                around every HTML element. It consists of: margins, borders, padding, and the actual content.
+                The image below illustrates the box model:</p>
+            <div class="gap" style="font-size:20px; ">
+                <div class="margin ">Margin
+                    <div class="bor">Border
+                        <div class="pad">Padding
+                            <div class="content">Content</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--line2-->
+        <div class="padding gap">
+
+            <p>
+                Explanation of the different parts:</p>
+            <ul class="padding">
+                <li>Content - The content of the box, where text and images appear</li>
+                <li>Padding - Clears an area around the content. The padding is transparent</li>
+                <li>Border - A border that goes around the padding and content</li>
+                <li>Margin - Clears an area outside the border. The margin is transparent</li>
+            </ul>
+            <p> The box model allows us to add a border
+                around elements, and to define space between elements.</p>
+        </div>
+
+        <!-- code -->
+        <div class=" bg2">
+
+            <div class="grey ">
+                <h4 class="heading3">Example</h4>
+                <p class="padding"> Demonstration of the box model:</p>
+                <!--Output-->
+                <h4 class="heading2">OUTPUT</h4>
+                <div class="white">
+                    <h4>Demonstrating the Box Model</h4>
+
+                    <p>The CSS box model is essentially a box that wraps around every HTML element.
+                        It consists of: borders, padding, margins, and the actual content.</p>
+
+                    <div class="style7">This text is the content of the box. We have added a 50px
+                        padding, 20px margin and a 15px green border. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+
+                </div>
+                <!--html-->
+                <h4 class="heading2">HTML</h4>
+                <div class="white">
+
+                    <span class="b">&lt;<span class="br">head</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">style</span>&gt;</span><br>
+                    <span class="br">div</span> {<br>
+                    <span class="r">background-color</span> : <span class="b">lightgrey</span>;<br>
+                    <span class="r">width</span> : <span class="b">300px</span>;<br>
+                    <span class="r">border</span> : <span class="b">15px solid green</span>;<br>
+                    <span class="r">padding</span> : <span class="b">50px</span>;<br>
+                    <span class="r">margin</span> : <span class="b">20px</span>;<br>}<br>
+                    <span class="b">&lt;<span class="br">/style</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">/head</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">body</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">h4</span>&gt;</span>
+                    <span class="bk">Demonstrating the Box Model</span>
+                    <span class="b">&lt;<span class="br">/h4</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">p</span>&gt;</span>
+                    <span class="bk">The CSS box model is essentially a box that wraps around every
+                        HTML element. It consists of: borders, padding, margins, and the actual
+                        content.</span>
+                    <span class="b">&lt;<span class="br">/p</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">div</span>&gt;</span>
+                    <span class="bk">This text is the content of the box. We have added a 50px
+                        padding, 20px margin and a 15px green border. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum.</span>
+                    <span class="b">&lt;<span class="br">/div</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">/body</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">/html</span>&gt;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--line2-->
+    <div class="text ">
+
+        <h4 class="heading1">Width and Height of an Element</h4>
+
+        <p class="padding">In order to set the width and height of an element
+            correctly in all browsers, you need to know how the box model works.</p>
+        <p class="blue gap"><span class="note">Important:</span>
+            When you set the width and height properties of an
+            element with CSS, you just set the width and height of the content area. To calculate the full
+            size of an element, you must also add padding, borders and margins.
+        </p>
+        <!-- code -->
+        <div class=" bg2">
+
+            <div class="grey ">
+                <h4 class="heading3">Example</h4>
+                <p class="padding">
+                    This &lt;div&gt; element will have a total width of 350px: </p>
+                <!--Output-->
+                <h4 class="heading2">OUTPUT</h4>
+                <div class="white">
+                    <h4>Calculate the total width:</h4>
+                    <img src="images/code.jpg" class="py-4" width="400" height="300" alt="Klematis">
+                    <div class="style2">The picture above is 400px wide. The total width of this element
+                        is also 400px.</div>
+                </div>
+                <!--html-->
+                <h4 class="heading2">HTML</h4>
+                <div class="white">
+
+                    <span class="b">&lt;<span class="br">head</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">style</span>&gt;</span><br>
+                    <span class="br">div</span> {<br>
+                    <span class="r">width</span> : <span class="b">320px</span>;<br>
+                    <span class="r">padding</span> : <span class="b">10px</span>;<br>
+                    <span class="r">margin</span> : <span class="b">0</span>;<br>
+                    <span class="r">border</span> : <span class="b">5px solid gray</span>;<br>
+                    <span class="b">&lt;<span class="br">/style</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">/head</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">body</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">h4</span>&gt;</span>
+                    <span class="bk">Calculate the total width:</span>
+                    <span class="b">&lt;<span class="br">/h4</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">img</span><span class="r"> src</span> =
+                        "images/coding.jpg"</span>
+                    <span class="r">width</span><span class="b"> = "350"</span>
+                    <span class="r">height</span><span class="b"> = "263"</span>
+                    <span class="r">alt</span><span class="b"> = "coding"&gt;</span><br>
+
+
+                    <span class="b">&lt;<span class="br">div</span>&gt;</span>
+                    <span class="bk">The picture above is 400px wide. The total width of this element is
+                        also 400px.</span>
+                    <span class="b">&lt;<span class="br">/div</span>&gt;</span><br><br>
+                    <span class="b">&lt;<span class="br">/body</span>&gt;</span><br>
+                    <span class="b">&lt;<span class="br">/html</span>&gt;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button -->
+    <div class="nextprev">
+        <a href="css_dimension.html" class="left ">
+            &lt; Previous</a>
+        <a href="css.html" class="right  "> Home &gt;</a>
+    </div>
+
+    <div class="For-Main4">&copy; 2023 Codeweb. All Rights Reserved</div>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+</html>
