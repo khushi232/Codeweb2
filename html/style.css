@@ -444,7 +444,7 @@ table tr:nth-child(odd) {
         float: left;
         display: none;
         background-color: black;
-        padding: 10px 0px 10px 10px;
+        padding: 30px 0px 20px 10px;
     }
 
 }
